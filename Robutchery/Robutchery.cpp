@@ -2,7 +2,8 @@
 //
 
 #include "stdafx.h"
-
+#include <vector>
+#include "Core.h"
 
 int main()
 {

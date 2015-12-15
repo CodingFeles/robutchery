@@ -1,11 +1,12 @@
 #pragma once
 
-class Game
-{
-public:
-	virtual ~Game() {};
-private:
 
+struct Action
+{
+};
+
+struct State
+{
 };
 
 class Player
@@ -15,15 +16,12 @@ public:
 	virtual Action MakeAction(State state) = 0;
 };
 
-class Action
-{
-public: 
-	virtual ~Action() {};
-};
 
-class State
+class Game
 {
 public:
-	virtual ~State() {};
-};
+	virtual ~Game() {};
+	virtual void Start(std::vector<Player>& players) = 0;
+private:
 
+};
